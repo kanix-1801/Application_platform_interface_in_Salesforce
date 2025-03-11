@@ -1,0 +1,36 @@
+<!--
+  @description       : 
+  @author            : Kanishk Singhal
+  @group             : 
+  @last modified on  : 02-18-2025
+  @last modified by  : Kanishk Singhal
+-->
+<template>
+    <lightning-card variant="Narrow" title="rainbow" icon-name="standard:account">
+
+        <div>
+            <lightning-combobox class="inputs" name="progress" label="Status" value={value}
+                placeholder="Select Progress" options={options} onchange={onChangeSeasonsSelecter}></lightning-combobox>
+
+            <p>Selected value is: {value}</p>
+
+        </div>
+
+        <div>
+
+            <svg class="svg_root" width="800" height="400" style="background-color: rgba(0, 0, 0, 0);">
+                <circle class="first" cx="400" cy="450" r="400" stroke="none" stroke-width="2" fill="green" />
+                <circle cx="400" cy="450" r="350" stroke="none" stroke-width="2" class="Sec" />
+                <circle cx="400" cy="450" r="300" stroke="none" stroke-width="2" class="third" />
+                <circle cx="400" cy="450" r="250" stroke="none" stroke-width="2" class="four" />
+                <circle cx="400" cy="450" r="200" stroke="none" stroke-width="2" class="five" fill="green" />
+                <circle cx="400" cy="450" r="150" stroke="none" stroke-width="2" class="six" />
+                <circle cx="400" cy="450" r="100" stroke="none" stroke-width="2" class="seven" />
+            </svg>
+
+        </div>
+    </lightning-card>
+</template>
+
+
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';

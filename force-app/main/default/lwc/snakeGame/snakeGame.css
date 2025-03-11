@@ -1,0 +1,24 @@
+.header{
+    background-color: rgba(64, 5, 94, 0.822);
+    color: aliceblue;
+}
+.game-container{
+    /* margin-top: 1%; */
+    width: 70vw;
+    height: 60vh;
+    background-color: rgba(5, 214, 120, 0.956);
+}
+.game-block{
+    width: 20px;
+    height: 20px;
+    background: honeydew; 
+    display: inline-block;
+    margin: 0%;
+    padding: 0%;
+}
+.snake{
+    background: green;
+}
+.food{
+    background: red;
+}

@@ -1,0 +1,32 @@
+.inputs{
+    width: 20%;
+    height: 20%;
+
+}
+
+.first{
+    /* fill: aliceblue; */
+}
+.Sec{
+    fill: aliceblue;
+}
+.third{
+    fill:aquamarine;
+}
+.four{
+    fill : blanchedalmond;
+}
+.five{
+    
+}
+.sex{
+    fill: bisque;
+}
+.seven{
+    fill: blue;
+}
+
+.svg_root{
+    /* width: 20%; */
+    margin-left: 20%;
+}

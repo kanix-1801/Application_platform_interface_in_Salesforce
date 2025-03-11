@@ -1,0 +1,15 @@
+<!--
+  @description       : 
+  @author            : Kanishk Singhal
+  @group             : 
+  @last modified on  : 02-24-2025
+  @last modified by  : Kanishk Singhal
+-->
+<template>
+    <lightning-card>
+        <template if:true={Contacts.data}>
+            <lightning-datatable key-field="Id" data={Contacts.data} columns={columns}>
+            </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>

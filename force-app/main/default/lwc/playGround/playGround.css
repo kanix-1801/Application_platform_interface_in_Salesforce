@@ -1,0 +1,23 @@
+.tableDiv{
+    max-height: 100px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    width: 100%;
+    /* position: sticky; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: 1;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}

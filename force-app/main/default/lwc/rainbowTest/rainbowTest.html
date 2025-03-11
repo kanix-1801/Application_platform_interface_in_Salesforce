@@ -1,0 +1,47 @@
+<!--
+  @description       : 
+  @author            : Kanishk Singhal
+  @group             : 
+  @last modified on  : 02-19-2025
+  @last modified by  : Kanishk Singhal
+-->
+<template>
+    <lightning-card variant="Narrow" title="Rainbow" icon-name="standard:account">
+        <div class="slds-p-around_medium">
+
+            <div class="controls-section">
+
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-3">
+                        <lightning-combobox label="Season" value={selectedSeason} options={seasonOptions}
+                            onchange={handleSeasonChange}></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <lightning-combobox label="Time of Day" value={selectedTimeOfDay} options={timeOfDayOptions}
+                            onchange={handleTimeOfDayChange}></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                        <lightning-combobox label="Hour" value={selectedHour} options={hourOptions}
+                            onchange={handleHourChange}></lightning-combobox>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="rainbow-container">
+                <div class="rainbow-svg_container">
+                    <svg class="rainbow-svg" width="400" height="200">
+                        <circle class="rainbow-band" cx="200" cy="225" r="200" fill="#FF0000" />
+                        <circle class="rainbow-band" cx="200" cy="225" r="175" fill="#FFA500" />
+                        <circle class="rainbow-band" cx="200" cy="225" r="150" fill="#FFFF00" />
+                        <circle class="rainbow-band" cx="200" cy="225" r="125" fill="#FF0000" />
+                        <circle class="rainbow-band" cx="200" cy="225" r="100" fill="#FFA500" />
+                        <circle class="rainbow-band" cx="200" cy="225" r="75" fill="#FFFF00" />
+                        <circle class="rainbow-band" cx="200" cy="225" r="50" fill="#FF0000" />
+                    </svg>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,17 @@
+.cards{
+    align-items: center;
+    margin-left: 28%;
+    /* width: 42%; */
+    /* border: 1px solid; */
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    background-color: rgba(210, 165, 240, 0.266);
+}
+
+.cards:hover{
+    background-color: rgba(210, 165, 240, 0.473);
+    /* box-shadow: 0 0 11px rgba(33, 33, 33, 0.488);  */
+}
+.block{
+    display: inline-block;
+   
+}

@@ -1,0 +1,57 @@
+.rainbow-container {
+    position: relative;
+    margin: 20px auto;
+    width: 400px;
+    height: 350px;
+    transition: transform 0.5s ease-in-out;
+}
+.rainbow-svg_container{
+    height: 50%;
+}
+.North {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.East {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: 0;
+    transform: rotate(90deg);
+}
+.South {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(180deg);
+}
+.West {
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: auto;
+    transform: rotate(-90deg);
+}
+.rainbow-svg {
+    transition: transform 0.5s ease-in-out;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    pointer-events: none;
+    transition: background-color 0.3s ease;
+}
+.rainbow-band {
+    stroke: none;
+    transition: fill 0.3s ease;
+}
+
+.inputBox{
+    width: 30%;
+}
+
+.controls-section{
+    margin-bottom: 2%;
+}

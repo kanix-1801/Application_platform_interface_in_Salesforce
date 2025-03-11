@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : Kanishk Singhal
+  @group             : 
+  @last modified on  : 02-19-2025
+  @last modified by  : Kanishk Singhal
+-->
+<template>
+    <lightning-card variant="Narrow" title="Check Box" icon-name="standard:multi_select_checkbox">
+        <div class="slds-m-around--large">
+            <template if:true={checkBoxs} for:each={checkBoxs} for:item="checkBox" for:index="index">
+                <div key={checkBox.Id}>
+                    <lightning-input type="checkbox" label={checkBox.label} data-id={checkBox.id}
+                        checked={checkBox.disable} onchange={handleCheckBox}></lightning-input>
+                </div>
+            </template>
+        </div>
+
+    </lightning-card>
+
+</template>
